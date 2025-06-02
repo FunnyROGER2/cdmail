@@ -1,0 +1,26 @@
+@import 'vars';
+@import 'mixins';
+
+/* stylelint-disable declaration-no-important */
+.link {
+	color: $clDarkGray;
+	text-decoration: underline;
+}
+
+.text-break {
+	word-wrap: break-word;
+	word-break: break-word;
+}
+
+.ruble {
+	font-family: 'Helvetica Neue', $ff;
+}
+
+.amount {
+	line-height: 34px !important;
+
+	span {
+		font-size: 32px !important;
+	}
+}
+/* stylelint-enable declaration-no-important */

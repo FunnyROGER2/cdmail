@@ -1,0 +1,49 @@
+{
+  "scripts": {
+    "start": "gulp start",
+    "build:watch": "gulp start --watchBuild",
+    "start:ampierOriginal": "gulp start --ampierOriginal",
+    "build": "gulp build",
+    "scss:vars": "json-to-scss ./config/vars.js ./styles/vars.scss --fk"
+  },
+  "lint-staged": {
+    "src/**/*.html": "npx prettier --write",
+    "styles/**/*.scss": "stylelint --fix --customSyntax postcss-scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "dependencies": {
+    "crypto": "1.0.1",
+    "vue": "2.6.12"
+  },
+  "license": "ISC",
+  "web-types": "./web-types.json",
+  "devDependencies": {
+    "@stylistic/stylelint-config": "2.0.0",
+    "@stylistic/stylelint-plugin": "3.1.1",
+    "browser-sync": "2.29.3",
+    "gulp": "4.0.2",
+    "gulp-if": "3.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-rename": "2.0.0",
+    "gulp-replace": "1.1.4",
+    "husky": "4.3.0",
+    "imagemin-pngquant": "9.0.2",
+    "inline-css": "4.0.2",
+    "js-beautify": "1.14.9",
+    "jsdom": "22.1.0",
+    "json-to-scss": "1.6.2",
+    "lint-staged": "13.0.3",
+    "mkdirp": "3.0.1",
+    "postcss-scss": "4.0.9",
+    "prettier": "2.8.8",
+    "rimraf": "5.0.1",
+    "sass": "1.66.1",
+    "stylelint": "16.8.2",
+    "stylelint-order": "6.0.4",
+    "stylelint-scss": "6.10.0"
+  }
+}

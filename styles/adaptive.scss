@@ -1,0 +1,25 @@
+@import 'vars';
+@import 'mixins';
+
+/* stylelint-disable declaration-no-important */
+@media only screen and (max-width: #{$containerW}px) {
+	.btn-wrap {
+		table {
+			width: 100%;
+			max-width: 100% !important;
+		}
+	}
+
+	.amount {
+		span {
+			font-size: 19px !important;
+			line-height: 24px !important;
+		}
+	}
+
+	.picture {
+		border-radius: 12px;
+		overflow: hidden;
+	}
+}
+/* stylelint-enable declaration-no-important */

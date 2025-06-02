@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+		<link
+			rel="icon"
+			type="image/png"
+			href="../../favicons/dev.png"
+		>
+		<title>{{ title }}</title>
+		<meta name="viewport" content="width=1000">
+		<style>#app{opacity: 0}</style>
+		{{ localCSS }}
+	</head>
+	<body>
+		{{ originalAmpier }}
+		<div id="app">
+			<tj-ui>
+				{{ body }}
+			</tj-ui>
+		</div>
+		{{ localJS }}
+	</body>
+</html>
